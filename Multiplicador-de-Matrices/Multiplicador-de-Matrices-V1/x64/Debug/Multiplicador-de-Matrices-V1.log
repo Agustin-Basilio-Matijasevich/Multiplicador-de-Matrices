@@ -1,2 +1,6 @@
 ﻿  Main.cpp
+A:\Programacion\Repositorios-GitHub\Multiplicador-de-Matrices\Multiplicador-de-Matrices\Multiplicador-de-Matrices-V1\Main.cpp(22,6): warning C4101: 'FMA': unreferenced local variable
+A:\Programacion\Repositorios-GitHub\Multiplicador-de-Matrices\Multiplicador-de-Matrices\Multiplicador-de-Matrices-V1\Main.cpp(22,16): warning C4101: 'FMB': unreferenced local variable
+A:\Programacion\Repositorios-GitHub\Multiplicador-de-Matrices\Multiplicador-de-Matrices\Multiplicador-de-Matrices-V1\Main.cpp(22,11): warning C4101: 'CMA': unreferenced local variable
+A:\Programacion\Repositorios-GitHub\Multiplicador-de-Matrices\Multiplicador-de-Matrices\Multiplicador-de-Matrices-V1\Main.cpp(22,21): warning C4101: 'CMB': unreferenced local variable
   Multiplicador-de-Matrices-V1.vcxproj -> A:\Programacion\Repositorios-GitHub\Multiplicador-de-Matrices\Multiplicador-de-Matrices\x64\Debug\Multiplicador-de-Matrices-V1.exe
