@@ -1,3 +1,5 @@
+# Excluciones C++
+
 # Prerequisites
 *.d
 
@@ -30,3 +32,14 @@
 *.exe
 *.out
 *.app
+
+# Archivos excluidos de Visual Studio
+*.ipch
+*.suo
+*.db
+*.db-shm
+*.db-wal
+*.opendb
+
+# Excluciones de Carpetas
+/.vs
