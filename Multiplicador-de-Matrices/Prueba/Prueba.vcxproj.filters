@@ -13,36 +13,10 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Codigo Auxiliar">
-      <UniqueIdentifier>{afc3e173-1d4f-4501-a4e5-1b6bae8a2555}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
+    <ClCompile Include="Prueba.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Funciones-Auxiliares.cpp">
-      <Filter>Codigo Auxiliar</Filter>
-    </ClCompile>
-    <ClCompile Include="Variables-Universales.cpp">
-      <Filter>Codigo Auxiliar</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Librerias.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Variables-Universales.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Constantes-Universales.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Funciones-Auxiliares.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Estructuras.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

@@ -11,35 +11,66 @@
 //Espacio numerico general
 using namespace std;
 
-//Funciones Auxiliares
-
-
 //Main
-
 int main()
 {
 	//Variables de la funcion
-	int FMA, CMA, FMB, CMB;
+	unsigned int FMA, CMA, FMB, CMB, FMR, CMR;  //filas y columnas de las matrices
+	bool multiplicacion;  //Indica si la multiplicacion fue exitosa o si no se puede realizar
 
 	//Banderas del Ciclo principal
 	bool Bandera = true;
 	int opcion = 1;
 
+	//Saludo principal
+	cout << "----------------------------------------------------" << endl;
+	cout << "--Bienvenido a la multiplicadora de matrices--" << endl;
+	cout << "--V1 (Matrices de hasta 200X200 con numeros decimales)--" << endl;
+	cout << "----------------------------------------------------" << endl << endl;
+
 	//Ciclo principal de funcionamiento
 	while (Bandera == true)
 	{
 		//Solicitud de datos
-		cout << "--Ingresemos la primera matriz--" << endl << endl;
-		cout << "Ingrese la cantidad de filas de la matriz A: ";
-		cin >> FMA;
-		cout << "Ingrese la cantidad de columnas de la matriz A: ";
-		cin >> CMA;
+		ingreso_datos(matrices, FMA, CMA, FMB, CMB);
 
-		cout << "--A continuacion ingrese los valores de la matriz A en orden F1 y C1 luego F1 y C2 y asi sucesivamente--";
+		//Impresion de matrices para control de ingreso
+		cout << "La matriz A es: " << endl;
+		imprimir_matriz(FMA, CMA, matrices.A);
+		cout << endl;
+		cout << "La matriz B es: " << endl;
+		imprimir_matriz(FMB, CMB, matrices.B);
+		cout << endl;
+
+		//Multiplicacion
+		multiplicacion = multiplicar_matrices(matrices, FMA, CMA, FMB, CMB, FMR, CMR);
+
+		//Resultados de la multiplicacion
+		if (multiplicacion)
+		{
+			cout << "El resultado de la multiplicacion es el siguiente:" << endl;
+
+			imprimir_matriz(FMR, CMR, matrices.R);
+
+			cout << endl;
+		}
+		else
+		{
+			cout << "Las matrices no se pueden multiplicar ya que las columnas de A: " << CMA << " no son iguales a filas de B: " << FMB << "." << endl;
+		}
 
 		//Control del Ciclo principal
-		cout << "Ingrese el numero de la opcion que quiera:" << endl << "Opcion 1: Salir" << endl << "Opcion 2: Realizar otra multiplicacion" << endl << "Su opcion es: ";
-		cin >> opcion;
+		do
+		{
+			cout << "Ingrese el numero de la opcion que quiera:" << endl << "Opcion 1: Salir" << endl << "Opcion 2: Realizar otra multiplicacion" << endl << "Su opcion es: ";
+			cin >> opcion;
+
+			if (opcion < 1 || opcion > 2)
+			{
+				cout << "Valor ingresado invalido, por favor reintente." << endl;
+			}
+
+		} while (opcion < 1 || opcion > 2);
 
 		if (opcion == 1)
 		{

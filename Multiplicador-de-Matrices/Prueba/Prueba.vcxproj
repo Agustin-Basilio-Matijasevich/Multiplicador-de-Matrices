@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{a97ad1dd-a327-43f6-9a2b-8d2d38ebe980}</ProjectGuid>
-    <RootNamespace>MultiplicadordeMatricesV1</RootNamespace>
+    <ProjectGuid>{0e94f568-b0ba-4e2e-80a1-308356eddc9c}</ProjectGuid>
+    <RootNamespace>Prueba</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,16 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Funciones-Auxiliares.cpp" />
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Variables-Universales.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Constantes-Universales.hpp" />
-    <ClInclude Include="Estructuras.hpp" />
-    <ClInclude Include="Funciones-Auxiliares.hpp" />
-    <ClInclude Include="Librerias.hpp" />
-    <ClInclude Include="Variables-Universales.hpp" />
+    <ClCompile Include="Prueba.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
